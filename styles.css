@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* Estilos para la barra de navegación */
+.navbar-custom {
+    background-color: #f392b5 !important; /* Color de fondo rosa más suave */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: #333333 !important; /* Color del texto más oscuro */
+}
+
+/* Estilos para etiquetas de formulario y controles */
+.form-group label {
+    font-size: 1rem; /* Tamaño de fuente normal */
+    color: #333333; /* Color de texto oscuro para buen contraste */
+}
+
+.form-control {
+    font-size: 1rem; /* Tamaño de fuente normal */
+    border-color: #ced4da; /* Color de borde normal */
+}
+
+/* Estilos para botón primario y su estado de :hover */
+.btn-primary {
+    background-color: #007bff; /* Color de fondo azul para el botón primario */
+    border-color: #007bff; /* Color de borde azul */
+    color: #ffffff; /* Color del texto blanco */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo azul más oscuro al pasar el ratón */
+    border-color: #0056b3; /* Color de borde azul más oscuro al pasar el ratón */
+}
+
+/* Estilos adicionales personalizados */
+
+/* Estilos para encabezados */
+h1, h2, h3 {
+    color: #333333; /* Color de texto oscuro para encabezados */
+    font-weight: bold; /* Texto en negrita para encabezados */
+}
+
+/* Estilos para párrafos */
+p {
+    line-height: 1.6; /* Espaciado de línea para mejor legibilidad */
+    margin-bottom: 15px; /* Espacio inferior para párrafos */
+}
+
+/* Estilos para enlaces */
+a {
+    color: #007bff; /* Color de enlace azul */
+    text-decoration: none; /* Quitar subrayado predeterminado */
+}
+
+a:hover {
+    color: #0056b3; /* Color de enlace azul más oscuro al pasar el ratón */
+}
+
+/* Estilos para listas */
+ul, ol {
+    margin-bottom: 15px; /* Espacio inferior para listas */
+}
+
+li {
+    margin-bottom: 5px; /* Espacio inferior para elementos de lista */
+}
+
+/* Estilos para secciones */
+.section {
+    padding: 30px; /* Relleno interno para secciones */
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+    border: 1px solid #ced4da; /* Borde ligero alrededor de secciones */
+}
+
+/* Estilos para contenedores */
+.container {
+    max-width: 1200px; /* Ancho máximo para contenedor principal */
+    margin: 0 auto; /* Centrar contenedor en la página */
+}
+
+/* Estilos para imágenes */
+.img-fluid {
+    max-width: 100%; /* Imágenes responsivas que se ajustan al ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 5px; /* Bordes redondeados para imágenes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor de imágenes */
+}
+
+/* Estilos para videos */
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 para videos responsivos */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para imágenes dentro de tarjetas */
+.card-img-top {
+    max-width: 100%; /* Asegura que la imagen dentro de la tarjeta ocupe todo el ancho disponible */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-top-left-radius: calc(0.25rem - 1px); /* Redondea la esquina superior izquierda de la imagen en la tarjeta */
+    border-top-right-radius: calc(0.25rem - 1px); /* Redondea la esquina superior derecha de la imagen en la tarjeta */
+}
+
+/* Ejemplo de aplicar estilos a una imagen específica */
+#perfil-img {
+    max-width: 300px; /* Tamaño máximo para la imagen de perfil */
+    border-radius: 50%; /* Hace que la imagen de perfil sea circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Margen inferior */
+}
+.form-control.is-valid {
+    border-color: #28a745; /* Borde verde para campo válido */
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545; /* Borde rojo para campo inválido */
+}
+
+.valid-feedback,
+.invalid-feedback {
+    display: none; /* Ocultar retroalimentación por defecto */
+}
+
+.form-control.is-valid + .valid-feedback,
+.form-control.is-invalid + .invalid-feedback {
+    display: block; /* Mostrar retroalimentación cuando sea necesario */
+}
