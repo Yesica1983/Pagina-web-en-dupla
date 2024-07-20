@@ -1,15 +1,10 @@
-// Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
 
     form.addEventListener('submit', function(event) {
-        // Prevenir que el formulario se envíe automáticamente
-        event.preventDefault();
+        event.preventDefault(); // Prevenir envío automático del formulario
 
-        // Validar los campos antes de enviar el formulario
         if (validateForm()) {
-            // Aquí puedes enviar el formulario usando AJAX u otro método
-            // Por ejemplo: form.submit();
             alert('Formulario válido, enviado correctamente.');
         } else {
             alert('Por favor complete todos los campos requeridos.');
@@ -26,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nombre.classList.add('is-invalid');
         } else {
             nombre.classList.remove('is-invalid');
+            nombre.classList.add('is-valid'); // Agregar clase is-valid si es válido
         }
 
         // Validar campo email
@@ -35,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             email.classList.add('is-invalid');
         } else {
             email.classList.remove('is-invalid');
+            email.classList.add('is-valid'); // Agregar clase is-valid si es válido
         }
 
         return isValid;

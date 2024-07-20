@@ -1,14 +1,14 @@
-/* styles.css */
-
 /* Estilos para la barra de navegación */
-.navbar-custom {
-    background-color: #f392b5 !important; /* Color de fondo rosa más suave */
+.bg-custom {
+    background-color: #f392b5; /* Color de fondo rosa más suave */
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
-    color: #333333 !important; /* Color del texto más oscuro */
+    color: #000000; /* Color del texto blanco */
 }
+
+
 
 /* Estilos para etiquetas de formulario y controles */
 .form-group label {
@@ -32,8 +32,6 @@
     background-color: #0056b3; /* Color de fondo azul más oscuro al pasar el ratón */
     border-color: #0056b3; /* Color de borde azul más oscuro al pasar el ratón */
 }
-
-/* Estilos adicionales personalizados */
 
 /* Estilos para encabezados */
 h1, h2, h3 {
@@ -111,27 +109,24 @@ li {
     border-top-right-radius: calc(0.25rem - 1px); /* Redondea la esquina superior derecha de la imagen en la tarjeta */
 }
 
-/* Ejemplo de aplicar estilos a una imagen específica */
-#perfil-img {
-    max-width: 300px; /* Tamaño máximo para la imagen de perfil */
-    border-radius: 50%; /* Hace que la imagen de perfil sea circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin-bottom: 20px; /* Margen inferior */
-}
+/* Estilo para campo de formulario válido */
 .form-control.is-valid {
     border-color: #28a745; /* Borde verde para campo válido */
 }
 
+/* Estilo para campo de formulario inválido */
 .form-control.is-invalid {
     border-color: #dc3545; /* Borde rojo para campo inválido */
 }
 
-.valid-feedback,
-.invalid-feedback {
-    display: none; /* Ocultar retroalimentación por defecto */
+/* Mostrar mensaje de retroalimentación para campo válido */
+.form-control.is-valid + .valid-feedback {
+    display: block; /* Mostrar retroalimentación cuando el campo es válido */
+    color: #28a745; /* Color de texto verde para retroalimentación */
 }
 
-.form-control.is-valid + .valid-feedback,
+/* Mostrar mensaje de retroalimentación para campo inválido */
 .form-control.is-invalid + .invalid-feedback {
-    display: block; /* Mostrar retroalimentación cuando sea necesario */
+    display: block; /* Mostrar retroalimentación cuando el campo es inválido */
+    color: #dc3545; /* Color de texto rojo para retroalimentación */
 }

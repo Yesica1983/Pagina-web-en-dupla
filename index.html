@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio</title>
-    <!-- Incluir Bootstrap CSS -->
+    <title>Pagina web en duplas</title>
+    <!-- Inclui Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Enlazar archivo CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Enlace archivo CSS personalizado -->
 </head>
+
 <body>
     <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
-        <a class="navbar-brand" href="#">Mi Sitio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <a class="navbar-brand" href="#">Desarrolladoras Full Stack</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -55,9 +58,10 @@
             </a>
         </div>
     </section>
-
-    <!-- Tarjeta de Perfil -->
+      
+  <!-- Tarjetas de Perfil -->
     <section id="perfil" class="mt-4">
+    <div class="card-container d-flex justify-content-around">
         <div class="card" style="width: 18rem;">
             <img id="perfil-img" src="IMG_cv.jpg" class="card-img-top img-fluid rounded-circle" alt="Foto de perfil">
             <div class="card-body">
@@ -66,7 +70,17 @@
                 <a href="#" class="btn btn-primary">Ver más</a>
             </div>
         </div>
+        <div class="card" style="width: 18rem;">
+            <img id="perfil-img" src="IMG_cv.jpg" class="card-img-top img-fluid rounded-circle" alt="Foto de perfil">
+            <div class="card-body">
+                <h5 class="card-title">Nombre del Perfil</h5>
+                <p class="card-text">Descripción del perfil.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </div>
     </section>
+
 
     <!-- Formulario de Contacto -->
     <section id="contacto" class="mt-4 text-center mb-4">
@@ -75,36 +89,36 @@
             <form id="contactForm">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control rounded-pill shadow" id="nombre" placeholder="Ingrese su nombre" aria-label="Nombre" aria-describedby="nombre-desc" required>
-                    <small id="nombre-desc" class="form-text text-muted">Por favor ingrese su nombre completo.</small>
+                    <input type="text" class="form-control rounded-pill shadow is-valid" id="nombre"
+                        placeholder="Ingrese su nombre" required>
                     <div class="valid-feedback">¡Campo válido!</div>
                     <div class="invalid-feedback">Por favor ingrese su nombre.</div>
                 </div>
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
-                    <input type="email" class="form-control rounded-pill shadow" id="email" placeholder="Ingrese su correo electrónico" aria-label="Correo Electrónico" required>
+                    <input type="email" class="form-control rounded-pill shadow is-invalid" id="email"
+                        placeholder="Ingrese su correo electrónico" required>
                     <div class="valid-feedback">¡Campo válido!</div>
                     <div class="invalid-feedback">Por favor ingrese un correo electrónico válido.</div>
                 </div>
                 <div class="form-group">
                     <label for="mensaje">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Escriba su mensaje" aria-label="Mensaje"></textarea>
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Escriba su mensaje"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
             </form>
-            
-            
         </div>
     </section>
+
 
     <!--  Bootstrap JS y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Enlace archivo JavaScript personalizado -->
     <script src="script.js"></script>
 
 </body>
-</html>
 
-        
+</html>
