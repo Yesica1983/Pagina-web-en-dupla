@@ -18,23 +18,42 @@ document.addEventListener('DOMContentLoaded', function() {
         const nombre = document.getElementById('nombre');
         if (nombre.value.trim() === '') {
             isValid = false;
-            nombre.classList.add('is-invalid');
+            setInvalid(nombre, 'Por favor ingrese su nombre.');
         } else {
-            nombre.classList.remove('is-invalid');
-            nombre.classList.add('is-valid'); // Agregar clase is-valid si es válido
+            setValid(nombre);
         }
 
         // Validar campo email
         const email = document.getElementById('email');
         if (email.value.trim() === '' || !isValidEmail(email.value.trim())) {
             isValid = false;
-            email.classList.add('is-invalid');
+            setInvalid(email, 'Por favor ingrese un correo electrónico válido.');
         } else {
-            email.classList.remove('is-invalid');
-            email.classList.add('is-valid'); // Agregar clase is-valid si es válido
+            setValid(email);
+        }
+
+        // Validar campo mensaje
+        const mensaje = document.getElementById('mensaje');
+        if (mensaje.value.trim() === '') {
+            isValid = false;
+            setInvalid(mensaje, 'Por favor escriba su mensaje.');
+        } else {
+            setValid(mensaje);
         }
 
         return isValid;
+    }
+
+    function setInvalid(element, message) {
+        element.classList.remove('is-valid');
+        element.classList.add('is-invalid');
+        element.nextElementSibling.innerHTML = message;
+    }
+
+    function setValid(element) {
+        element.classList.remove('is-invalid');
+        element.classList.add('is-valid');
+        element.nextElementSibling.innerHTML = '';
     }
 
     function isValidEmail(email) {
