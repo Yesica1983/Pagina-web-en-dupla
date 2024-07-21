@@ -152,3 +152,8 @@ li {
     display: block; /* Mostrar retroalimentación cuando el campo es inválido */
     color: #dc3545; /* Color de texto rojo para retroalimentación */
 }
+#perfil-img {
+    width: 150px; /* Ajusta este valor según el tamaño deseado */
+    height: 150px; /* Ajusta este valor según el tamaño deseado */
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor */
+}
