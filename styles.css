@@ -1,36 +1,58 @@
-/* Estilos para la barra de navegación */
-.bg-custom {
-    background-color: #f392b5; /* Color de fondo rosa más suave */
+/* Estilos para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #fff3e3;;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  /* Estilos para la barra de navegación */
+.navbar.bg-custom {
+    background-color: #f392b5; 
 }
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav .nav-link {
-    color: #000000; /* Color del texto blanco */
+.navbar.bg-custom .navbar-brand,
+.navbar.bg-custom .navbar-nav .nav-link {
+    color: #000000; /* Color del texto negro */
 }
-
 
 
 /* Estilos para etiquetas de formulario y controles */
 .form-group label {
-    font-size: 1rem; /* Tamaño de fuente normal */
-    color: #333333; /* Color de texto oscuro para buen contraste */
+    font-size: 1rem; 
+    color: #333333; 
 }
 
 .form-control {
-    font-size: 1rem; /* Tamaño de fuente normal */
-    border-color: #ced4da; /* Color de borde normal */
+    font-size: 1rem; 
+    border-color: #ced4da; 
 }
 
 /* Estilos para botón primario y su estado de :hover */
 .btn-primary {
-    background-color: #007bff; /* Color de fondo azul para el botón primario */
-    border-color: #007bff; /* Color de borde azul */
-    color: #ffffff; /* Color del texto blanco */
+    background-color: #007bff; 
+    border-color: #007bff; 
+    color: #ffffff; 
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Color de fondo azul más oscuro al pasar el ratón */
-    border-color: #0056b3; /* Color de borde azul más oscuro al pasar el ratón */
+    background-color: #0056b3; 
+    border-color: #0056b3; 
 }
 
 /* Estilos para encabezados */
