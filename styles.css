@@ -25,7 +25,7 @@ body {
   /* Estilos para la barra de navegación */
 .navbar.bg-custom {
     background-color: #f392b5; 
-}
+}  
 .navbar.bg-custom .navbar-brand,
 .navbar.bg-custom .navbar-nav .nav-link {
     color: #000000; /* Color del texto negro */
