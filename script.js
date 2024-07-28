@@ -1,3 +1,23 @@
+ 
+ document.addEventListener('DOMContentLoaded', function() {
+    const contrastToggle = document.getElementById('contrastToggle');
+    const body = document.body;
+
+    // Cargar el estado del contraste desde el almacenamiento local si existe
+    if (localStorage.getItem('high-contrast') === 'true') {
+        body.classList.add('high-contrast');
+    }
+
+    contrastToggle.addEventListener('click', function() {
+        if (body.classList.contains('high-contrast')) {
+            body.classList.remove('high-contrast');
+            localStorage.setItem('high-contrast', 'false');
+        } else {
+            body.classList.add('high-contrast');
+            localStorage.setItem('high-contrast', 'true');
+        }
+    });
+});
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
 

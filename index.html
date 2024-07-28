@@ -12,11 +12,15 @@
 
 <body>
     <header class="header">
+        <div class="logo-container">
+            <img src="Imagenes/Logo.png" alt="Logo de la empresa" class="logo">
+        </div>
         <h1>Creamos Páginas Web Impactantes</h1>
         <p>Somos expertas en crear soluciones web modernas y efectivas.</p>
+        <button id="contrastToggle" class="btn btn-secondary" aria-label="Toggle contrast mode">Modo Alto Contraste</button>
     </header>
-
-    <!-- Barra de Navegación -->
+    
+   <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
         <a class="navbar-brand" href="#">Desarrolladoras Full Stack</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -43,13 +47,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagen 1.jfif" class="d-block w-100 img-fluid rounded" alt="...">
+                    <img src="Imagenes/Image 1.jfif" class="d-block w-100 img-fluid rounded" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagen 2.jfif" class="d-block w-100 img-fluid rounded" alt="...">
+                    <img src="Imagenes/images (1).jfif" class="d-block w-100 img-fluid rounded" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagen 3.jfif" class="d-block w-100 img-fluid rounded" alt="...">
+                    <img src="Imagenes/images.jfif" class="d-block w-100 img-fluid rounded" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -64,33 +68,35 @@
     </section>
 
     <!-- Tarjetas de Perfil -->
-    <section id="perfil" class="mt-4">
-        <div class="card-container d-flex justify-content-around">
-            <div class="card" style="width: 18rem;">
-                <img id="perfil-img" src="IMG_cv.jpg" class="card-img-top img-fluid rounded-circle" alt="Foto de perfil">
-                <div class="card-body">
-                    <h5 class="card-title">Yesica Anali Sofra</h5>
-                    <p class="card-text">Soy desarrolladora Full Stack especializada en la creación de páginas web con HTML, CSS y JavaScript.
-                    Transformo ideas en soluciones digitales funcionales y creativas, asegurando una experiencia de usuario excepcional desde el diseño hasta la implementación.</p>
-                    <p class="card-text"><strong>Celular:</strong>  223-6683498</p>
-                    <p class="card-text"><strong>Email:</strong>  yesisofra22@outlook.com</p>
-                    <p class="card-text"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yesica-anali-sofra-4263aa28b" target="_blank">yesica</a></p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img id="perfil-img" src="Roxy.jpeg" class="card-img-top img-fluid rounded-circle" alt="Foto de perfil">
-                <div class="card-body">
-                    <h5 class="card-title">Roxana Marchetto</h5>
-                    <p class="card-text">Estudiante Full Stack Developer.</p>
-                    <p class="card-text"><strong>Celular:</strong> 351-2425076</p>
-                    <p class="card-text"><strong>Email:</strong>roxanamarchetto@gmail.com</p>
-                    <p class="card-text"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mbamarchetto" target="_blank">roxana</a></p>
-                    <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
+    <!-- Tarjetas de Perfil -->
+<section id="perfil" class="mt-4">
+    <div class="card-container d-flex justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="Imagenes/IMG_cv.jpg" class="card-img-top img-fluid" alt="Foto de perfil">
+            <div class="card-body">
+                <h5 class="card-title">Yesica Anali Sofra</h5>
+                <p class="card-text">Soy desarrolladora Full Stack especializada en la creación de páginas web con HTML, CSS y JavaScript.
+                Transformo ideas en soluciones digitales funcionales y creativas, asegurando una experiencia de usuario excepcional desde el diseño hasta la implementación.</p>
+                <p class="card-text"><strong>Celular:</strong>  223-6683498</p>
+                <p class="card-text"><strong>Email:</strong>  yesisofra22@outlook.com</p>
+                <p class="card-text"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yesica-anali-sofra-4263aa28b" target="_blank">yesica</a></p>
+                <a href="#" class="btn btn-primary">Ver más</a>
             </div>
         </div>
-    </section>
+        <div class="card" style="width: 18rem;">
+            <img src="Imagenes/Roxy.jpeg" class="card-img-top img-fluid" alt="Foto de perfil">
+            <div class="card-body">
+                <h5 class="card-title">Roxana Marchetto</h5>
+                <p class="card-text">Estudiante Full Stack Developer.</p>
+                <p class="card-text"><strong>Celular:</strong> 351-2425076</p>
+                <p class="card-text"><strong>Email:</strong>roxanamarchetto@gmail.com</p>
+                <p class="card-text"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mbamarchetto" target="_blank">roxana</a></p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Formulario de Contacto -->
     <section id="contacto" class="mt-4 text-center mb-4">

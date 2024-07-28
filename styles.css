@@ -1,171 +1,120 @@
-/* Estilos para la página */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header {
-    background-color: #fff3e3;;
-    color: #000000;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .header h1 {
+}
+
+/* Encabezado */
+.header {
+    background-color: #e0f7fa; /* Color claro que combina bien con rosa viejo (ej. aqua claro) */
+    color: #00796b; /* Color oscuro para el texto en el encabezado */
+    padding: 20px; /* Ajusta el padding si es necesario */
+    text-align: center; /* Centra el texto */
+}
+
+.header .logo {
+    width: 200px; /* Ajusta el ancho del logo según lo necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin: 0 auto 10px; /* Centra la imagen y agrega espacio abajo */
+}
+
+.header h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .header p {
-    font-size: 1.2rem;
-  }
-  /* Estilos para la barra de navegación */
-.navbar.bg-custom {
-    background-color: #f392b5; 
-}  
-.navbar.bg-custom .navbar-brand,
-.navbar.bg-custom .navbar-nav .nav-link {
-    color: #000000; /* Color del texto negro */
 }
 
-
-/* Estilos para etiquetas de formulario y controles */
-.form-group label {
-    font-size: 1rem; 
-    color: #333333; 
+.header p {
+    font-size: 1.25rem;
 }
 
-.form-control {
-    font-size: 1rem; 
-    border-color: #ced4da; 
+/* Barra de navegación */
+.navbar {
+    background-color: #d81b60; /* Rosa viejo para la barra de navegación */
 }
 
-/* Estilos para botón primario y su estado de :hover */
-.btn-primary {
-    background-color: #007bff; 
-    border-color: #007bff; 
-    color: #ffffff; 
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Texto blanco por defecto para enlaces en barra de navegación rosa viejo */
 }
 
-.btn-primary:hover {
-    background-color: #0056b3; 
-    border-color: #0056b3; 
+.navbar-toggler-icon {
+    background-image: url('path_to_default_icon.png'); /* Imagen del icono por defecto */
 }
 
-/* Estilos para encabezados */
-h1, h2, h3 {
-    color: #333333; /* Color de texto oscuro para encabezados */
-    font-weight: bold; /* Texto en negrita para encabezados */
-}
-
-/* Estilos para párrafos */
-p {
-    line-height: 1.6; /* Espaciado de línea para mejor legibilidad */
-    margin-bottom: 15px; /* Espacio inferior para párrafos */
-}
-
-/* Estilos para enlaces */
-a {
-    color: #007bff; /* Color de enlace azul */
-    text-decoration: none; /* Quitar subrayado predeterminado */
-}
-
-a:hover {
-    color: #0056b3; /* Color de enlace azul más oscuro al pasar el ratón */
-}
-
-/* Estilos para listas */
-ul, ol {
-    margin-bottom: 15px; /* Espacio inferior para listas */
-}
-
-li {
-    margin-bottom: 5px; /* Espacio inferior para elementos de lista */
-}
-
-/* Estilos para secciones */
-.section {
-    padding: 30px; /* Relleno interno para secciones */
-    background-color: #f8f9fa; /* Color de fondo gris claro */
-    border: 1px solid #ced4da; /* Borde ligero alrededor de secciones */
-}
-
-/* Estilos para contenedores */
-.container {
-    max-width: 1200px; /* Ancho máximo para contenedor principal */
-    margin: 0 auto; /* Centrar contenedor en la página */
-}
-
-/* Estilos para imágenes */
-.img-fluid {
-    max-width: 100%; /* Imágenes responsivas que se ajustan al ancho del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
-    border-radius: 5px; /* Bordes redondeados para imágenes */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor de imágenes */
-}
-
-/* Estilos para videos */
-.video-responsive {
-    position: relative;
-    padding-bottom: 56.25%; /* Proporción 16:9 para videos responsivos */
-    height: 0;
-    overflow: hidden;
-}
-
-.video-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Estilos para imágenes dentro de tarjetas */
+/* Estilos para las imágenes de perfil */
 .card-img-top {
-    max-width: 100%; /* Asegura que la imagen dentro de la tarjeta ocupe todo el ancho disponible */
-    height: auto; /* Altura automática para mantener la proporción */
-    border-top-left-radius: calc(0.25rem - 1px); /* Redondea la esquina superior izquierda de la imagen en la tarjeta */
-    border-top-right-radius: calc(0.25rem - 1px); /* Redondea la esquina superior derecha de la imagen en la tarjeta */
+    width: 150px; /* Ajusta el ancho según lo necesario */
+    height: 150px; /* Ajusta la altura según lo necesario */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+    border-radius: 50%; /* Hace que la imagen sea circular */
 }
 
-/* Estilo para campo de formulario válido */
-.form-control.is-valid {
-    border-color: #28a745; /* Borde verde para campo válido */
-}
-
-/* Estilo para campo de formulario inválido */
-.form-control.is-invalid {
-    border-color: #dc3545; /* Borde rojo para campo inválido */
-}
-
-/* Mostrar mensaje de retroalimentación para campo válido */
-.form-control.is-valid + .valid-feedback {
-    display: block; /* Mostrar retroalimentación cuando el campo es válido */
-    color: #28a745; /* Color de texto verde para retroalimentación */
-}
-
-/* Mostrar mensaje de retroalimentación para campo inválido */
-.form-control.is-invalid + .invalid-feedback {
-    display: block; /* Mostrar retroalimentación cuando el campo es inválido */
-    color: #dc3545; /* Color de texto rojo para retroalimentación */
-}
-#perfil-img {
-    width: 150px; /* Ajusta este valor según el tamaño deseado */
-    height: 150px; /* Ajusta este valor según el tamaño deseado */
-    object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor */
-}
 /* Estilos para el carrusel */
-.carousel-inner {
-    max-height: 500px; /* Ajusta la altura máxima del carrusel */
+.carousel-item img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor del carrusel */
+    height: auto; /* Mantiene la relación de aspecto original de la imagen */
+    max-height: 400px; /* Ajusta la altura máxima según lo necesario */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+    filter: blur(1px); /* Aplica un desenfoque ligero para reducir la nitidez */
 }
 
-.carousel-item img {
-    max-height: 500px; /* Ajusta la altura máxima de las imágenes del carrusel */
-    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del carrusel */
-    height: auto; /* Mantiene la proporción de la altura */
-    width: auto; /* Mantiene la proporción del ancho */
-    margin: 0 auto; /* Centra las imágenes */
+/* Estilos para el modo alto contraste */
+.high-contrast {
+    background-color: black !important;
+    color: white !important;
+}
+
+.high-contrast .header {
+    background-color: black !important; /* Fondo negro para el encabezado */
+    color: white !important; /* Texto blanco en el encabezado */
+}
+
+.high-contrast .header h1, .high-contrast .header p {
+    color: white !important; /* Texto blanco para h1 y p en el encabezado */
+}
+
+.high-contrast .navbar {
+    background-color: yellow !important; /* Fondo amarillo para la barra de navegación */
+    color: black !important; /* Texto negro en los elementos de la barra de navegación */
+}
+
+.high-contrast .navbar .navbar-brand {
+    color: black !important; /* Texto negro para la marca de la navbar */
+}
+
+.high-contrast .navbar .navbar-nav .nav-link {
+    color: black !important; /* Texto negro para los enlaces de la navbar */
+}
+
+.high-contrast .navbar .navbar-toggler {
+    background-color: black !important; /* Fondo negro para el botón de alternar */
+    border: 1px solid black !important; /* Borde negro para el botón de alternar */
+}
+
+.high-contrast .navbar .navbar-toggler-icon {
+    background-image: url('path_to_black_icon.png') !important; /* Imagen del icono en negro si es necesario */
+}
+
+.high-contrast .card {
+    background-color: #333 !important; /* Fondo oscuro para las tarjetas */
+    color: white !important; /* Texto claro en las tarjetas */
+}
+
+.high-contrast .btn-primary {
+    background-color: yellow !important; /* Botones primarios en amarillo */
+    color: black !important;
+}
+
+/* Estilos para el formulario de contacto */
+.high-contrast .form-control {
+    background-color: #555 !important; /* Fondo oscuro para los campos del formulario */
+    color: white !important; /* Texto blanco para los campos del formulario */
+}
+
+.high-contrast .form-control::placeholder {
+    color: #ccc !important; /* Color de texto del placeholder */
+}
+
+.high-contrast .form-control:focus {
+    background-color: #666 !important; /* Fondo más claro cuando el campo está en foco */
+    color: white !important;
+    border-color: yellow !important; /* Borde amarillo cuando el campo está en foco */
 }
